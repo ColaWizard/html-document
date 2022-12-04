@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#Getting_started_with_HTML"
+            >Getting started with HTML</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#HTML_text_fundamentals"
+            >HTML text fundamentals</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Creating_hyperlinks">Creating hyperlinks</a></li>
+        <li><a class="nav-link" href="#Advanced_text_formatting">Advanced text formatting</a></li>
+        <li>
+          <a class="nav-link" href="#Document_and_website_structure"
+            >Document and website structure</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Debugging_HTML">Debugging HTML</a></li>
+        <li>
+          <a class="nav-link" href="#Marking_up_a_letter">Marking up a letter</a>
+        </li>
+        <li><a class="nav-link" href="#Structuring_a_page_of_content">Structuring a page of content</a></li>
+        <li><a class="nav-link" href="#Images_in_HTML">Images in HTML</a></li>
+        <li>
+          <a class="nav-link" href="#Video_and_audio_content"
+            >Video and audio content</a
+          >
+        </li>
+        <li><a class="nav-link" href="#HTML_tables">HTML tables</a></li>
+        <li>
+          <a class="nav-link" href="#HTML_table_advanced_features_and_accessibility"
+            >HTML table advanced features and accessibility</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        
+        <article>
+          <p>
+            HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+          </p>
+
+          <p>
+            "Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
+          </p>
+          <ul>
+            <li>
+                HTML uses "markup" to annotate text, images, and other content for display in a Web browser.
+            </li>
+            <li>
+                An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded. 
+                The name of an element inside a tag is case insensitive. That is, it can be written in uppercase, lowercase, or a mixture. 
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Getting_started_with_HTML">
+        <header>Getting started with HTML</header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+<code><code>
+    x = 5;
+    y = 6;
+    z = x + y;
+    </code></code>
+          <ul>
+            <li>
+                Before starting this module, you don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively 
+            </li>
+            <li>You should have a basic work environment set up (as detailed in Installing basic software), and understand how to create and manage files.</li>
+            <li>
+              Some understanding of (CSS) would be good to.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_text_fundamentals">
+        <header>HTML text fundamentals</header>
+        <article>
+          <p>
+        One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
+          </p>
+
+          <p>
+            Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.
+          </p>
+          <p>
+            Implementing structural hierarchy.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Creating_hyperlinks">
+        <header>Creating hyperlinks</header>
+        <article>
+            Hyperlinks are really important — they are what makes the Web a web. This article shows the syntax required to make a link, and discusses link best practices.
+            
+                <code>
+                x = 5;
+                y = 7;
+                z = x + y;
+                </code>
+                
+            A basic link is created by wrapping the text or other content, see Block level links, inside an (a) element and using the href attribute, also known as a Hypertext Reference, or target, that contains the web address.
+          
+        </article>
+      </section>
+      <section class="main-section" id="Advanced_text_formatting">
+        <header>Advanced text formatting</header>
+        <p>
+            There are many other elements in HTML for formatting text, which we didn't get to in the HTML text fundamentals article. 
+        </p>
+        <p>
+            If a section of block level content (be it a paragraph, multiple paragraphs, a list, etc.) is quoted from somewhere else, you should wrap it inside a (blockquote) element to signify this, and include a URL pointing to the source of the quote inside a cite attribute.
+        </p>
+        <code>
+            x = 3;
+            y = 9;
+            z = 7
+            </code>
+        <p>
+            Inline quotations work in exactly the same way, except that they use the (q) element. 
+        </p>
+      </section>
+      <section class="main-section" id="Document_and_website_structure">
+        <header>Document and website structure</header>
+          <p>
+            In addition to defining individual parts of your page (such as "a paragraph" or "an image"), HTML also boasts a number of block level elements used to define areas of your website (such as "the header", "the navigation menu", "the main content column")
+          </p>
+          <p>
+            Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured: header, navigation bar, main content, sidebar and footer.
+          </p>
+          <p>
+            Some websites have more columns, some are a lot more complex, but you get the idea. With the right CSS, you could use pretty much any elements to wrap around the different sections and get it looking how you wanted, but as discussed before, we need to respect semantics and use the right element for the right job.
+          </p>
+        
+      </section>
+      <section class="main-section" id="Debugging_HTML">
+        <header>Debugging HTML</header>
+       
+          <p>
+            Writing HTML is fine, but what if something goes wrong, and you can't work out where the error in the code is? This article will introduce you to some tools that can help you find and fix errors in HTML.
+          </p>
+          <code>
+            x = 5;
+            y = 7;
+            z = example;
+            </code>
+          <p>
+            When writing code of some kind, everything is usually fine, until that dreaded moment when an error occurs — you've done something wrong, so your code doesn't work — either not at all, or not quite how you wanted it to.
+          </p>
+          
+          <p>
+            HTML is not as complicated to understand as Rust. HTML is not compiled into a different form before the browser parses it and shows the result (it is interpreted, not compiled). And HTML's element syntax is arguably a lot easier to understand than a "real programming language" like Rust, JavaScript, or Python. The way that browsers parse HTML is a lot more permissive than how programming languages are run, which is both a good and a bad thing.
+          </p>
+
+          
+      </section>
+      <section class="main-section" id="Marking_up_a_letter">
+        <header>Marking up a letter</header>
+        <article>
+          <p>
+            We all learn to write a letter sooner or later; it is also a useful example to test our text formatting skills. In this assignment, you'll have a letter to mark up as a test for your HTML text formatting skills, as well as hyperlinks and proper use of the HTML (head) element.
+          </p>
+          <code>
+            x = 11;
+            y = 99;
+            z = x + y;
+            </code>
+          <p>
+            To begin, get the raw text you need to mark up, and the CSS to style the HTML. Create a new .html file using your text editor or use an online tool such as CodePen, jsFiddle, or Glitch to complete the tasks.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Structuring_a_page_of_content">
+        <header>Structuring a page of content</header>
+       
+          <p>
+            Structuring a page of content ready for laying it out using CSS is a very important skill to master, so in this assessment you'll be tested on your ability to think about how a page might end up looking, and choose appropriate structural semantics to build a layout on top of.
+          </p>
+
+         
+          
+      </section>
+      <section class="main-section" id="Images_in_HTML">
+        <header>Images in HTML</header>
+        
+          <p>In the beginning, the Web was just text, and it was really quite boring. Fortunately, it wasn't too long before the ability to embed images (and other more interesting types of content) inside web pages was added. There are other types of multimedia to consider, but it is logical to start with the humble (img) element, used to embed a simple image in a webpage.</p>
+          <code>
+            x = 5;
+            y = 7;
+            d = 9;
+            </code>
+              <p>In order to put a simple image on a web page, we use the (img) element. This is a void element (meaning, it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt. The src attribute contains a URL pointing to the image you want to embed in the page.</p>
+              
+      </section>
+      <section class="main-section" id="Video_and_audio_content">
+        <header>Video and audio content</header>
+        
+          <p>
+            The first influx of online videos and audio were made possible by proprietary plugin-based technologies like Flash and Silverlight. Both of these had security and accessibility issues, and are now obsolete, in favor of native HTML solutions (video) and (audio) elements and the availability of JavaScript APIs for controlling them.
+          </p>
+          
+          
+      </section>
+      <section class="main-section" id="HTML_tables">
+        <header>HTML tables</header>
+        
+          <p>
+            A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your favorite dinosaurs or football team.
+          </p>
+
+          <p>
+            A table is a structured set of data made up of rows and columns (tabular data). A table allows you to quickly and easily look up values that indicate some kind of connection between different types of data, for example a person and their age, or a day of the week, or the timetable for a local swimming pool.
+          </p>
+
+          
+
+          
+      </section>
+      <section class="main-section" id="HTML_table_advanced_features_and_accessibility">
+        <header>HTML table advanced features and accessibility</header>
+        
+          <p>
+            You can give your table a caption by putting it inside a (caption) element and nesting that inside the (table) element. You should put it just below the opening (table) tag.
+          </p>
+
+          
+          <p>
+            he point of a table is that it is rigid. Information is easily interpreted by making visual associations between row and column headers. Look at the table below for example and find a Jovian gas giant with 62 moons. You can find the answer by associating the relevant row and column headers.
+          </p>
+          
+          <p>
+            You can also have a look at the live example on GitHub! One thing you'll notice is that the table does look a bit more readable there — this is because the table you see above on this page has minimal styling, whereas the GitHub version has more significant CSS applied.
+          </p>
+       
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/HTML"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
